@@ -95,7 +95,9 @@ import iad1tya.echo.music.constants.EnableLastFMScrobblingKey
 import iad1tya.echo.music.constants.HideExplicitKey
 import iad1tya.echo.music.constants.HideVideoSongsKey
 import iad1tya.echo.music.constants.HistoryDuration
+import iad1tya.echo.music.constants.LastFMSessionKey
 import iad1tya.echo.music.constants.LastFMUseNowPlaying
+import iad1tya.echo.music.constants.LastFMUseSendLikes
 import iad1tya.echo.music.constants.MediaSessionConstants.CommandToggleLike
 import iad1tya.echo.music.constants.MediaSessionConstants.CommandToggleRepeatMode
 import iad1tya.echo.music.constants.MediaSessionConstants.CommandToggleShuffle
@@ -452,7 +454,28 @@ class MusicService :
         
         playerInitialized.value = false
 
-        
+        scrobbleManager = ScrobbleManager(scope)
+
+        scope.launch {
+            dataStore.data.map { it[EnableLastFMScrobblingKey] ?: false }.distinctUntilChanged().collect {
+                scrobbleManager?.enableScrobbling = it
+            }
+        }
+        scope.launch {
+            dataStore.data.map { it[LastFMUseNowPlaying] ?: false }.distinctUntilChanged().collect {
+                scrobbleManager?.useNowPlaying = it
+            }
+        }
+        scope.launch {
+            dataStore.data.map { it[LastFMUseSendLikes] ?: false }.distinctUntilChanged().collect {
+                scrobbleManager?.useSendLikes = it
+            }
+        }
+        scope.launch {
+            dataStore.data.map { it[LastFMSessionKey] }.distinctUntilChanged().collect { sessionKey ->
+                com.music.echo.utils.lastfm.LastFM.sessionKey = sessionKey
+            }
+        }        
         
 
         try {

@@ -432,6 +432,10 @@ fun NavGraphBuilder.navigationBuilder(
         iad1tya.echo.music.ui.screens.settings.DiscordSettings(navController, scrollBehavior)
     }
 
+    composable("settings/lastfm") {
+        com.music.echo.ui.screens.settings.LastFMSettingsScreen(navController)
+    }
+
     composable("settings/discord/experimental") {
         com.music.echo.ui.screens.settings.DiscordExperimental(navController)
     }

@@ -258,6 +258,12 @@ fun AccountSettingsScreen(
                         onClick = { navController.navigate("settings/discord") }
                     ),
                     Material3SettingsItem(
+                        isHighlighted = (highlightKey == stringResource(R.string.lastfm_integration)),
+                        icon = painterResource(R.drawable.queue_music),
+                        title = { Text(stringResource(R.string.lastfm_integration)) },
+                        onClick = { navController.navigate("settings/lastfm") }
+                    ),
+                    Material3SettingsItem(
                         isHighlighted = (highlightKey == stringResource(R.string.listenbrainz_scrobbling)),
                         icon = painterResource(R.drawable.token),
                         title = { Text(stringResource(R.string.listenbrainz_scrobbling)) },

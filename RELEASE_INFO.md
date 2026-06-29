@@ -5,3 +5,4 @@
 - Added Discord Integration to the settings menu.
 - Fixed Discord Rich Presence not syncing by implementing automated token extraction via WebView.
 - Improved Discord Rich Presence to automatically update on song change, playback state changes, and setting modifications.
+- Added Last.fm Integration to the Account settings menu, including Last.fm scrobbling support and optional likes synchronization.
