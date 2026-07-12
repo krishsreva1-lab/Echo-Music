@@ -288,25 +288,18 @@
     <string name="clear_translation_models">Modelos de traducción claros</string>
     <string name="action_like_all">Me gustan todas</string>
     <string name="squiggly">Ondulado</string>
-
-
     <!-- Bottom navigation -->
     <string name="music">Música</string>
-
     <!-- Search -->
     <string name="filter_local">Local</string>
-
     <!-- Album screen -->
     <string name="album_description_placeholder">Esta es una descripción de marcador de posición para el álbum. ¡Disfruta escuchando las pistas de abajo!</string>
-
     <!-- Playlist -->
     <string name="you_might_also_like">Listas relacionadas</string>
-
     <!-- Button -->
     <string name="shuffle_content_desc">Aleatorio</string>
     <string name="shuffle_label">Aleatorio</string>
     <string name="pause">Pausa</string>
-
     <!-- Menu -->
     <string name="saving">Guardando</string>
     <string name="saved">Guardado</string>
@@ -314,7 +307,6 @@
     <string name="add_to_an_playlist">Añadir</string>
     <string name="more_label">Más</string>
     <string name="releases_for_you">Nuevos lanzamientos para ti</string>
-
     <!-- Dialog -->
     <string name="hide_status_bar_on_fullscreen">Ocultar la barra de estado en pantalla completa</string>
     <string name="hide_status_bar_on_fullscreen_desc">Oculta la barra de estado cuando el modo de pantalla completa de la letra está activo</string>
@@ -323,14 +315,12 @@
     <string name="lyrics_thumbnail_play_pause">Mostrar reproducir/pausa en la miniatura</string>
     <string name="lyrics_thumbnail_play_pause_desc">Muestra un botón de reproducir/pausa superpuesto en la miniatura de la canción en la letra a pantalla completa</string>
     <string name="picker_not_available">El selector de documentos no está disponible en este dispositivo. Usando el directorio de exportación predeterminado de la aplicación.</string>
-
     <!-- Plurals -->
     <plurals name="n_apk_found">
         <item quantity="one">%d APK encontrado</item>
         <item quantity="many">%d APK encontrados</item>
         <item quantity="other">%d APK encontrados</item>
     </plurals>
-
     <!-- Settings -->
     <string name="theme_desc">Personaliza el tema de la aplicación</string>
     <string name="theme_colors">Tema y colores</string>
@@ -361,8 +351,6 @@
     <string name="standard_lyrics_blur">Desenfoque de letra estándar</string>
     <string name="listen_together_smart_resync">Resincronización inteligente de red</string>
     <string name="listen_together_smart_resync_desc">Ponte al día automáticamente con el anfitrión después de una caída de la conexión</string>
-
-
     <string name="spotify_import_title">Importar desde Spotify</string>
     <string name="spotify_import_desc">Conecta Spotify, elige listas de reproducción y reprodúcelas en listas locales de Echo Music.</string>
     <string name="spotify_connect">Conectar Spotify</string>
@@ -389,4 +377,13 @@
     <string name="spotify_account">Cuenta de Spotify</string>
     <string name="spotify_waiting_for_login">Esperando inicio de sesión en Spotify</string>
     <string name="export_directory_unavailable">Unable to access an export directory on this device.</string>
+    <string name="loading">Cargando</string>
+    <string name="added_to_playlist">Añadido a %s</string>
+    <string name="more_options">Más opciones</string>
+    <string name="export_as_csv">Exportar como CSV</string>
+    <string name="export_playlist_desc"></string>
+    <string name="export_successful">Lista de reproducción exportada correctamente</string>
+    <string name="spotify_import_by_link_desc">Pega el enlace de una lista de reproducción de Spotify para importarla, incluso si no es tuya</string>
+    <string name="spotify_add">Añadir</string>
+    <string name="spotify_invalid_playlist_link">Eso no parece un enlace a una lista de reproducción de Spotify. Usa un enlace como https://open.spotify.com/playlist/…</string>
 </resources>
