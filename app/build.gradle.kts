@@ -33,8 +33,8 @@ android {
         applicationId = "iad1tya.echo.music"
         minSdk = 26
         targetSdk = 36
-        versionCode = 519
-        versionName = "5.2.5"
+        versionCode = 520
+        versionName = "5.2.6"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -62,7 +62,7 @@ android {
         buildConfigField("String", "DISCORD_REDIRECT_SCHEME", "\"$discordRedirectScheme\"")
         manifestPlaceholders["discordRedirectScheme"] = discordRedirectScheme
     }
-    
+
 
     flavorDimensions += listOf("abi", "variant")
     productFlavors {
@@ -78,7 +78,7 @@ android {
             dimension = "variant"
             buildConfigField("Boolean", "CAST_AVAILABLE", "true")
         }
-        
+
         create("universal") {
             dimension = "abi"
             buildConfigField("String", "ARCHITECTURE", "\"universal\"")
@@ -246,7 +246,7 @@ dependencies {
         exclude(group = "org.apache.httpcomponents")
     }
 
-    
+
     implementation(libs.haze)
     implementation(libs.guava)
     implementation(libs.coroutines.guava)

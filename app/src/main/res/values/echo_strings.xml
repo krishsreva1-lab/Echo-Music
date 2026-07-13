@@ -308,7 +308,7 @@
     <string name="crossfade_duration">Crossfade duration</string>
     <string name="crossfade_gapless">Disable for gapless albums</string>
     <string name="crossfade_gapless_desc">Don\'t crossfade if the album is gapless</string>
-    <string name="automix">Automix</string>
+    <string name="automix">Automix (Beta)</string>
     <string name="automixing">Automixing</string>
     <string name="automix_debug">Automix debug overlay</string>
     <string name="automix_debug_desc">Show live beat analysis and transition plan on the player</string>
