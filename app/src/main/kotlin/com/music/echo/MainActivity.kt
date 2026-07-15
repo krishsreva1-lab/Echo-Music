@@ -667,7 +667,7 @@ class MainActivity : ComponentActivity() {
 
                 val playerBottomSheetState = rememberBottomSheetState(
                     dismissedBound = 0.dp,
-                    collapsedBound = if (useFloatingNavBar && !showRail) {
+                    collapsedBound = if (useFloatingNavBar && !showRail && shouldShowNavigationBar) {
                         0.dp
                     } else {
                         bottomInset +

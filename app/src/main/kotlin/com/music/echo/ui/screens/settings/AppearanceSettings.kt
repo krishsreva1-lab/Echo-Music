@@ -1807,7 +1807,7 @@ highlightKey: String? = null) {
                 ),
                 Material3SettingsItem(
     isHighlighted = (highlightKey == stringResource(R.string.enable_haptics)),
-                    icon = painterResource(R.drawable.swipe),
+                    icon = painterResource(R.drawable.vibration),
                     title = { Text(stringResource(R.string.enable_haptics)) },
                     description = { Text(stringResource(R.string.enable_haptics_desc)) },
                     trailingContent = {
