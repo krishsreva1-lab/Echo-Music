@@ -23,3 +23,6 @@
 - Fixed the Refetch button in menus to correctly clear offline caches and database formats, ensuring a fresh audio fetch.
 - Removed the "Charts" section completely from the Search screen.
 - Renamed the "Suggestions" section to "Echo Chart" in the Search screen.
+- Added an AI playlist modification tool, allowing users to modify existing playlists using text prompts.
+- Updated the AI modify playlist dialog to match the app's standard Material 3 aesthetics and circular loading indicators.
+- The "Recommended by AI" playlist on the Home screen now displays the time it was last updated.
